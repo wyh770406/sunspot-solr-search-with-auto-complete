@@ -1,0 +1,7 @@
+<div class="topic topic_line">
+  <div >标题：<%= link_to(highlight(topic.title, @keywords), '/'+topic.course+'/'+topic.grade+'/'+topic.publisher+'/'+topic.id.to_s+'.rar') %></div>
+  <div>课目：<%=topic.course%></div>
+  <div>教材：<%=topic.publisher%></div>
+  <div>年级：<%=link_to topic.grade,topic.download_url%></div>  
+
+</div>

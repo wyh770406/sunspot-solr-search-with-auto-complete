@@ -1,0 +1,15 @@
+// change colors
+//$linkColor: red;
+
+$iconSpritePath: asset-url('glyphicons-halflings.png', image);
+$iconWhiteSpritePath: asset-url('glyphicons-halflings-white.png', image);
+
+// change grid
+$gridColumnWidth: 70px;
+$gridGutterWidth: 10px;
+
+body { padding-top: 60px; }
+
+// import original bootstrap
+@import "twitter/bootstrap";
+@import "twitter/bootstrap-responsive";

@@ -1,0 +1,13 @@
+<h3>教学资源搜索</h3>
+          <%= form_tag '/search', :method => "get" do%>
+            <%=autocomplete_field_tag "q",params[:search_key].present? ? params[:search_key] : "搜索关键字", autocomplete_keyword_word_path, :onclick => "clear_tip()" %>
+            <%=submit_tag "搜索"%>
+          <% end %>
+
+          <script type="text/javascript">
+            function clear_tip(){
+              if(document.getElementById("q").value == "搜索关键字"){
+                document.getElementById("q").value = "";
+              }
+            }
+          </script>          
